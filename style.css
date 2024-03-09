@@ -480,6 +480,16 @@ input[type="submit"]:hover{
     .nav-right{
         display: none;
     }
+    .mentor-card{
+        width: 400px;
+    }
+    .mentor-card-right p{
+        font-size: 8px;
+    }
+    .mentor-card-left img{
+        width: 100px;
+        height: 100px;
+    }
 }
 @media screen and (max-width:450px) {
     .about-section-right video{
@@ -491,6 +501,9 @@ input[type="submit"]:hover{
     }
     h2{
         font-size: 2rem;
+    }
+    .contact-section-right img{
+        width: 300px;
     }
   
 }

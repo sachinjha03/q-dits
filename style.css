@@ -161,6 +161,8 @@ h2{
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
+    background-color: black;
+    color: white;
 }
 .about-section-left{
     display: flex;
@@ -191,6 +193,8 @@ h2{
     flex-direction: column;
     gap: 3rem;
     padding: 2rem 2rem;
+    background-color: black;
+    color: white;
 }
 .service-section-top{
     text-align: center;
@@ -219,6 +223,7 @@ h2{
     font-size: 10px;
     overflow: hidden;
     position: relative;
+    border: 1px solid #00adef;
 }
 .service-card::before{
     content: "";
@@ -253,6 +258,7 @@ h2{
 .service-card img{
     width: 30px;
     position: relative;
+    filter: invert(100%);
 }
 .service-card h3{
     font-size: 1.2rem;
@@ -307,7 +313,9 @@ h2{
     align-items: center;
     gap: 2rem;
     /* background: radial-gradient(circle at 10% 20%, rgb(142, 224, 251) 0%, rgb(255, 121, 225) 100.7%); */
-    background-color: rgba(7, 129, 216, 0.202);
+    /* background-color: rgba(7, 129, 216, 0.202); */
+    background-color: #00adef;
+    color: white;
 }
 .team-section h2{
     color: white;
@@ -354,6 +362,8 @@ h2{
     flex-direction: column;
     gap: 2rem;
     padding: 3rem 2rem;
+    background-color: black;
+    color: white;
 }
 .mentor-section-top h2{
     text-align: center;
@@ -448,6 +458,47 @@ input[type="submit"]:hover{
     border-radius: 8px;
     box-shadow: 14px 14px 0px rgb(226, 226, 226);
 }
+
+
+/* BLOG SECTION */
+.blog-section{
+    padding: 3rem 2rem
+}
+.blog-section-top{
+    text-align: center;
+}
+.blog-section-bottom{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+.blog-section-bottom::-webkit-scrollbar{
+    display: none;
+}
+.blog-card{
+    padding: 1rem 1rem;
+    max-width: 350px;
+    min-width: 360px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.blog-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.blog-card a{
+    font-size: 14px;
+    color: #00adef;
+    text-decoration: underline;
+}
+
+
 /* FOOTER */
 #footer{
     margin-top: 3rem;

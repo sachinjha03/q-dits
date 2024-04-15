@@ -1,0 +1,68 @@
+.career-page-landing-section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background: url("../images/landingBg.png");
+    background-size: cover;
+    background-position: center;
+}
+.career-page-landing-section-left{
+    max-width: 500px;
+}
+.career-page-landing-section-left h1 span{
+    color: var(--blue);
+}
+.career-page-landing-section-right img{
+    width: 400px;
+}
+.career-page-landing-section-left .btn-a{
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+/* CAREER PERKS */
+.career-perks{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.career-perks h2{
+    text-align: center;
+}
+.career-perks > h2 span{
+    color: var(--blue);
+}
+.career-perks-box{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.career-perks-card{
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    border: 2px solid var(--blue);
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    text-align: center;
+}
+.career-perks-card img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.career-perks-card p{
+    font-size: 12px;
+}

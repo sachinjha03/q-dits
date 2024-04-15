@@ -1,23 +1,15 @@
-let serviceBox = document.getElementById("otherServiceBoxParent")
-let serviceBtn = document.getElementById("serviceBtn")
-let navbar = document.getElementById("navbar")
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.querySelector(".landing-section-right");
+    const images = document.querySelectorAll(".random-image");
+  
+    images.forEach(function(image) {
+      const randomX = Math.random() * (container.offsetWidth - image.offsetWidth);
+      const randomY = Math.random() * (container.offsetHeight - image.offsetHeight);
+      
+      image.style.left = randomX + "px";
+      image.style.top = randomY + "px";
+    });
 
-serviceBtn.addEventListener("click" , () => {
-    console.log("working");
-    if(serviceBox.style.display == "flex"){
-        serviceBox.style.display = "none"
-        serviceBtn.innerHTML = "View All Services"
-    }else{
-        serviceBox.style.display = "flex"
-        serviceBtn.innerHTML = "Hide Services"
-        window.scrollBy(0, 150);
-    }
-})
 
-window.addEventListener('scroll' , () => {
-    if(window.scrollY >= 50){
-        navbar.style.backgroundColor = "white"
-    }else{
-        navbar.style.backgroundColor = "transparent"
-    }
-})
+  });
+

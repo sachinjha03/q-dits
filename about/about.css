@@ -1,0 +1,40 @@
+.about-landing-section{
+    width: 100%;
+    min-height: 100vh;
+    background: url("../images/BlogLandingBg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.about-landing-section-right img{
+    width: 350px;
+}
+.about-landing-section-left{
+    max-width: 500px;
+}
+.about-landing-section-left h1 span{
+    color: var(--blue);
+}
+.about-landing-section-left h4{
+    color: var(--blue);
+}
+.about-page-second-section{
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.about-page-second-section-left{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.about-page-second-section-right img{
+    width: 350px;
+}

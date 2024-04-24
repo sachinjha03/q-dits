@@ -1,31 +1,3 @@
-/* NAVBAR SECTION */
-#navbar{
-    width: 100%;
-    padding: 0.6rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0%;
-    z-index: 999;
-    background-color: white;
-}
-.nav-left img{
-    width: 120px;
-}
-.nav-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-.nav-right a{
-    transition: 0.4s;
-}
-.nav-right a:hover{
-    color: #00adef;
-    transform: translateY(-4px);
-}
 
 
 .first-section{
@@ -42,33 +14,17 @@
     gap: 1rem;
     max-width: 500px;
 }
+.first-section-left h2{
+    color: var(--blue);
+}
 .first-section-right img{
     width: 400px;
-    height: 300px;
-    object-fit: cover;
+    /* height: 300px; */
+    /* object-fit: cover; */
     border-radius: 6px;
 }
 
-.second-section{
-    padding: 2rem 2rem;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-.second-section .service-quality-card{
-    width: 250px;
-    height: 200px;
-    border: 2px solid #00adef;
-    padding: 2rem 2rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    background-color: #00adef;
-    color: white;
-}
+
 .third-section{
     padding: 2rem 4rem;
     text-align: center;

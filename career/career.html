@@ -20,8 +20,8 @@
         </div>
         <div class="navbar-between">
             <a href="../index.html" class="link-a">Home</a>
-            <a href="../index.html" class="link-a">What We Do</a>
-            <a href="../index.html" class="link-a">Why Q-DITS</a>
+            <a href="../index.html#whatWeDo" id="wwd" class="link-a">What We Do</a>
+            <a href="../index.html#whyUs" id="wu" class="link-a">Why Q-DITS</a>
             <div class="drop-down">
                 <p>Company &#11167;</p>
                 <ul>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="navbar-right">
-            <a href="../index.html" class="btn-a">Contact Us</a>
+            <a href="../index.html#contactUs" id="cu" class="btn-a">Contact Us</a>
         </div>
     </nav>
     <div class="career-page-landing-section">
@@ -94,10 +94,10 @@
                 <h3>Explore</h3>    
                 <div class="footer-drop-down">
                     <ul>
-                        <li><a href="./about/about.html" class="link-a">About Us</a></li>
-                        <li><a href="./learn with us/learn.html" class="link-a">Learn With Us</a></li>
+                        <li><a href="../about/about.html" class="link-a">About Us</a></li>
+                        <li><a href="../learn with us/learn.html" class="link-a">Learn With Us</a></li>
                         <li><a href="./career.html" class="link-a">Careers</a></li>
-                        <li><a href="./blogs/blogs.html" class="link-a">Blogs</a></li>
+                        <li><a href="../blogs/blogs.html" class="link-a">Blogs</a></li>
                     </ul>
                 </div>
             </div>
@@ -131,5 +131,36 @@
     <div class="error-screen">
         <img src="../images/404.png" alt="">
     </div>
+
+
+    <script>
+        if (window.location.pathname.includes('/career/')) {
+          document.querySelector('wwd').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = '../index.html';
+            setTimeout(function() {
+              document.querySelector('#whatWeDo').scrollIntoView({ behavior: 'smooth' });
+            }, 500);
+          });
+        }
+        if (window.location.pathname.includes('/career/')) {
+          document.querySelector('wu').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = '../index.html';
+            setTimeout(function() {
+              document.querySelector('#whyUs').scrollIntoView({ behavior: 'smooth' });
+            }, 500);
+          });
+        }
+        if (window.location.pathname.includes('/career/')) {
+      document.querySelector('cu').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = '../index.html';
+        setTimeout(function() {
+          document.querySelector('#contactUs').scrollIntoView({ behavior: 'smooth' });
+        }, 500);
+      });
+    }
+      </script>
 </body>
 </html>

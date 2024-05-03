@@ -717,3 +717,21 @@ h3{
       display:flex
     }
   }
+
+  @media screen and (max-width:850px) {
+    .navbar-between{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    html{
+      font-size: 80%;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    html{
+      font-size: 60%;
+    }
+  }

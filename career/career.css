@@ -9,6 +9,7 @@
     background: url("../images/landingBg.png");
     background-size: cover;
     background-position: center;
+    flex-wrap: wrap;
 }
 .career-page-landing-section-left{
     max-width: 500px;
@@ -65,4 +66,25 @@
 }
 .career-perks-card p{
     font-size: 12px;
+}
+
+@media screen and (max-width:900px) {
+    .career-page-landing-section-left{
+        max-width: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .career-page-landing-section-right img{
+        width: 300px;
+    }
+    .career-page-landing-section{
+        min-height: 70vh;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .career-page-landing-section-right img{
+        width: 250px;
+    }
 }

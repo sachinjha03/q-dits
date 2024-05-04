@@ -34,6 +34,19 @@
         <div class="navbar-right">
             <a href="../index.html#contactUs" id="cu" class="btn-a">Contact Us</a>
         </div>
+        <img src="../images/menu.png" alt="" onclick="displayMenu()">
+        <div class="side-menu" id="sideMenu">
+            <img src="../images/logo.png" alt="">
+            <a href="../index.html" class="link-a">Home</a>
+            <a href="../index.html#whatWeDo" id="wwd" class="link-a">What We Do</a>
+            <a href="../index.html#whyUs" id="wu" class="link-a">Why Q-DITS</a>
+            <a href="../about/about.html" class="link-a">About Us</a>
+            <a href="../learn with us/learn.html" class="link-a">Learn With Us</a>
+            <a href="../career/career.html" class="link-a">Careers</a>
+            <a href="../blogs/blogs.html" class="link-a">Blogs</a>
+            <a href="../index.html#contactUs" id="cu" class="btn-a">Contact Us</a>
+            <button class="btn-a red-btn" onclick="hideMenu()">Close Btn</button>
+        </div>
     </nav>
 
     <div class="meet-science-banner-section">
@@ -187,12 +200,16 @@
     </footer>
 
 
-    <div class="error-screen">
-        <img src="../images/404.png" alt="">
-    </div>
 
 
     <script>
+        let sideMenu = document.getElementById("sideMenu");
+        function displayMenu(){
+            sideMenu.style.display = "flex";
+        }
+        function hideMenu(){
+            sideMenu.style.display = "none";
+        }
         if (window.location.pathname.includes('/data meet science/')) {
           document.querySelector('wwd').addEventListener('click', function(event) {
             event.preventDefault();

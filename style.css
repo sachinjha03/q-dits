@@ -44,6 +44,10 @@ h3{
     position: relative;
     transition: 0.5s;
 }
+.red-btn{
+  background-color: orangered;
+  border: none;
+}
 .btn-a:hover{
     background-color: transparent;
     color: var(--blue);
@@ -101,7 +105,13 @@ h3{
     box-shadow: rgba(66, 66, 73, 0.2) 0px 7px 29px 0px;
     z-index: 999;
     background-color: white;
+    position: relative;
     /* border-bottom: 0.2px solid gray; */
+}
+#navbar > img{
+  width: 20px;
+  cursor: pointer;
+  display: none;
 }
 .navbar-left img{
     width: 140px;
@@ -155,6 +165,25 @@ h3{
 }
 .drop-down:hover > ul{
   display: block;
+}
+
+.side-menu{
+  position: fixed;
+  top: 0%;
+  right:0%;
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 3rem 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.side-menu img{
+  width: 120px;
 }
 
 /* LANDING SECTION */
@@ -722,11 +751,67 @@ h3{
     .navbar-between{
       display: none;
     }
+    .navbar-right{
+      display: none;
+    }
+    #navbar > img{
+      display: block;
+    }
+    .filter-section img{
+      width: 300px;
+    }
+    .why-us-image img{
+      width: 300px;
+    }
+    .what-we-do-card-image img{
+      width: 200px;
+    }
+    .team-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .mentor-box{
+      width: 100%;
+      max-width: none;
+    }
+    .team-box{
+      max-width: none;
+      width: 100%;
+    }
+    .team-card{
+      width: 90%;
+    }
   }
 
-  @media screen and (max-width:600px) {
+
+  @media screen and (max-width:750px) {
+    .service-card-section{
+      display: grid;
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 2rem;
+    }
+    .why-us{
+      flex-direction: column;
+    }
+    .why-us img{
+      width: 430px;
+    }
+    .filter-section{
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width:750px) {
     html{
       font-size: 80%;
+    }
+    .landing-section-right{
+      left: 0%;
+    }
+    .mentor-box h2{
+      display: none;
     }
   }
 

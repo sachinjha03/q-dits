@@ -784,6 +784,7 @@ h3{
       width: 90%;
     }
   }
+  
 
 
   @media screen and (max-width:750px) {
@@ -815,8 +816,115 @@ h3{
     }
   }
 
+  @media only screen and (max-width: 700px) {
+    .dynamic-txts li {
+      font-size: 40px;
+    }
+    .wrapper .dynamic-txts {
+      height: 60px;
+      line-height: 60px;
+      overflow: hidden;
+    }
+    @keyframes slide {
+      100% {
+        top: -250px;
+      }
+    }
+    .contact-form .input-field{
+      width: 350px;
+    }
+    .our-goal #dataImage1{
+      width: 160px;
+      left: 20%;
+    }
+    .our-goal #dataImage2{
+      width: 160px;
+      right: 20%;
+    }
+    .experience-card img{
+      width: 100px;
+    }
+    .experience-card:nth-child(4) img{
+      width: 100px;
+    }
+  }
+
+  @media screen and (max-width:550px) {
+    .why-us img{
+      width: 330px;
+    }
+    .what-we-do-card-image img{
+      width: 100px;
+    }
+    .landing-section-right{
+      display: none;
+    }
+    .experience-card h2{
+      display: none;
+    }
+  }
+
   @media screen and (max-width:450px) {
+    .navbar-left img{
+      width: 70px;
+    }
     html{
       font-size: 60%;
+    }
+    .landing-section{
+      min-height: 60vh;
+      height: 60vh;
+    }
+    .filter-section img{
+      width: 250px;
+    }
+    .dynamic-txts li {
+      font-size: 25px;
+    }
+    .wrapper .dynamic-txts {
+      height: 25px;
+      line-height: 25px;
+      overflow: hidden;
+    }
+    @keyframes slide {
+      100% {
+        top: -110px;
+      }
+    }
+    .team-card p{
+      font-size: 8px;
+    }
+    .mentor-card img{
+      width: 150px;
+      height: 150px;
+    }
+    .service-card{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .experience-card img{
+      width: 60px;
+    }
+    .experience-card:nth-child(4) img{
+      width: 60px;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    .what-we-do-card-image img{
+      width: 60px;
+    }
+    .what-we-do-card-content img{
+      width: 20px;
+    }
+    .contact-form .input-field{
+      width: 300px;
+    }
+    .team-card{
+      width: 100%;
+    }
+    html{
+      font-size: 50%;
     }
   }

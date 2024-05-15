@@ -194,6 +194,36 @@ h3{
   width: 25px;
 }
 
+/* NEW LANDING SECTION */
+.new-landing-section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 3rem 3rem;
+  color: white;
+  position: relative;
+}
+.new-landing-section video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+}
+.new-landing-section h1 , .new-landing-section h4 , .new-landing-section p{
+  position: relative;
+  max-width: 80%;
+}
+.new-landing-section p{
+  max-width: 80%;
+}
+
 /* LANDING SECTION */
 .landing-section{
     width: 100%;
@@ -264,8 +294,8 @@ h3{
 }
 .second-section >  h2 span{
     color: var(--blue);
-    border-bottom: 4px solid var(--blue);
-    border-radius: 6px;
+    /* border-bottom: 4px solid var(--blue); */
+    /* border-radius: 6px; */
 }
 .what-we-do-card{
     display: flex;
@@ -348,7 +378,7 @@ h3{
     height: 4px;
     border-radius: 20px;
     background-color: var(--blue);
-    animation: size 12s linear infinite;
+    /* animation: size 12s linear infinite; */
 }
 @keyframes size{
     0%{
@@ -798,9 +828,9 @@ h3{
     .landing-section-right{
       display: none;
     }
-    .mentor-box h2{
+    /* .mentor-box h2{
       display: none;
-    }
+    } */
   }
   
 
@@ -877,6 +907,21 @@ h3{
     }
     .experience-card h2{
       display: none;
+    }
+    .mentor-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+    }
+    .mentor-box > h2{
+      width: 200px;
+      text-align: left;
+      position: relative;
+      transform: rotate(0deg);
+    }
+    .mentor-card{
+      width: auto;
     }
   }
 

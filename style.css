@@ -187,6 +187,9 @@ h3{
   width: 120px;
 }
 .side-menu button{
+  position: absolute;
+  top: 2%;
+  right: 4%;
   border: none;
   background-color: transparent;
 }
@@ -828,6 +831,21 @@ h3{
     .landing-section-right{
       display: none;
     }
+    .mentor-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+    }
+    .mentor-box > h2{
+      width: 200px;
+      text-align: left;
+      position: relative;
+      transform: rotate(0deg);
+    }
+    .mentor-card{
+      width: auto;
+    }
     /* .mentor-box h2{
       display: none;
     } */
@@ -908,21 +926,7 @@ h3{
     .experience-card h2{
       display: none;
     }
-    .mentor-box{
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      align-items: left;
-    }
-    .mentor-box > h2{
-      width: 200px;
-      text-align: left;
-      position: relative;
-      transform: rotate(0deg);
-    }
-    .mentor-card{
-      width: auto;
-    }
+    
   }
 
   @media screen and (max-width:450px) {

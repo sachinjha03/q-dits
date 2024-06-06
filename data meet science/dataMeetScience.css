@@ -25,12 +25,61 @@
 .meet-science-landing-section{
     padding: 3rem 2rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
 }
 .meet-science-landing-section img{
     width: 140px;
 }
+.meet-science-landing-section p{
+    width: 100%;
+    padding: 1rem 1rem;
+    position: relative;
+}
+.meet-science-landing-section p:nth-child(even){
+    text-align: right;
+    padding-left: 10%;
+    border-right: 4px dotted var(--blue);
+}
+.meet-science-landing-section p:nth-child(odd){
+    text-align: left;
+    padding-right: 10%;
+    border-left: 4px dotted var(--blue);
+}
+.meet-science-landing-section p:nth-child(odd)::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 20%;
+    height: 4px;
+    background-color: var(--blue);
+    }
+.meet-science-landing-section p:nth-child(even)::before{
+    content: "";
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 20%;
+    height: 4px;
+    background-color: var(--blue);
+}
 .meet-science-landing-section p span{
     font-weight: bold;
+}
+
+
+@media screen and (max-width:700px) {
+    .meet-science-landing-section p:nth-child(even){
+        border-right: 2px solid var(--blue);
+    }
+    .meet-science-landing-section p:nth-child(odd){
+        border-left: 2px solid var(--blue);
+    }
+    .meet-science-landing-section p:nth-child(odd)::before{
+        height: 2px;
+        }
+    .meet-science-landing-section p:nth-child(even)::before{
+        height: 2px;
+    }
 }
